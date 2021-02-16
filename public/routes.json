@@ -2,10 +2,7 @@
 	"routes": [
 		{
 			"route": "/*",
-			"allowedRoles": ["reader", "authenticated"]
-		},
-		{
-			"route": "/*",
+			"allowedRoles": ["reader", "authenticated"],
 			"serve": "/index.html",
 			"statusCode": 200
 		}
