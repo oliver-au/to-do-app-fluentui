@@ -15,6 +15,10 @@ const initialState: RootState = {
 	},
 	loading: {
 		loading: false
+	},
+	notification: {
+		notifications: [],
+		nextId: 1
 	}
 }
 
