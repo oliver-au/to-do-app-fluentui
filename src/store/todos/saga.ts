@@ -3,6 +3,8 @@ import { GET_TODOS, GET_TODOS_ASYNC, ADD_TODO_ASYNC, ADD_TODO, IAddTodoAsyncActi
 import todosApi from './api'
 import { ITodosState } from './state'
 import { v4 as uuid } from 'uuid';
+import { PUSH_NOTIFICATION } from '../notifications/types'
+import {} from '../notifications/actions'
 
 export function* getTodosAsync() {
 
@@ -14,6 +16,11 @@ export function* getTodosAsync() {
 		})
 	} catch(e) {
 		console.log(e)
+		yield put({
+			type: PUSH_NOTIFICATION,
+			notificationType: 'error',
+			message: "Can't fetch Todo list"
+		})
 	}
 }
 

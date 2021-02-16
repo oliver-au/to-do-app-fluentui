@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
 import todoReducer from './todos/reducer'
 import loadingReducer from './loading/reducer'
+import notificationReducer from './notifications/reducers'
 
 export const rootReducer = combineReducers({
   todo: todoReducer,
-  loading: loadingReducer
+  loading: loadingReducer,
+  notification: notificationReducer
 })
 
 
