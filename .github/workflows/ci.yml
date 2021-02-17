@@ -37,4 +37,7 @@ jobs:
         npm ci
         npm run test
         npm run build
-        rm -rf ./node_modules
+    - name: Runner workspace path
+      run: |
+        echo "Cleaning up previous run"
+        rm -rf "${{ github.workspace }}"
