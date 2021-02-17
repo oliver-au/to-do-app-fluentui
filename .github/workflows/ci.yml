@@ -37,3 +37,8 @@ jobs:
         npm ci
         npm run test
         npm run build
+
+    - name: deploy
+      run: |
+        cd ~
+        pwd
