@@ -27,4 +27,13 @@ jobs:
           api_location: "api" # Api source code path - optional
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+          
+      - name: clean
+        run: |
+          rm -rf ./node_modules
+          rm -rf ./build
+          rm -rf ./.oryx_all_node_modules
+          rm -rf ./.oryx_prod_node_modules
+            
+          
 
