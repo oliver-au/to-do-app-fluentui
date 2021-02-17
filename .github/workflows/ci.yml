@@ -40,5 +40,9 @@ jobs:
 
     - name: deploy
       run: |
-        cd ~
-        pwd
+        cd ~/projects/website/hinter2020-fluentui
+        git pull origin master
+        npm run build
+        pm2 restart hinter2020
+
+        
