@@ -41,3 +41,5 @@ jobs:
         npm ci
         npm run test
         npm run build
+        pwd
+        rm -rf ./node_modules
