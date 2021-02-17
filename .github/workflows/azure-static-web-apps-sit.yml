@@ -28,12 +28,12 @@ jobs:
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
           
-      - name: clean
+      - name: Runner workspace path
         run: |
-          rm -rf ./node_modules
-          rm -rf ./build
-          rm -rf ./.oryx_all_node_modules
-          rm -rf ./.oryx_prod_node_modules
+          echo "Cleaning up previous run"
+          rm -rf "${{ github.workspace }}"
+          
+          
             
           
 
