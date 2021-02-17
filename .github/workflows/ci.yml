@@ -14,11 +14,9 @@ jobs:
 
     runs-on: self-hosted
 
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-
     steps:
+    - run: |
+        mkdir testdir
     - uses: actions/checkout@v2
     - name: Use Node.js 12.x
       uses: actions/setup-node@v1
