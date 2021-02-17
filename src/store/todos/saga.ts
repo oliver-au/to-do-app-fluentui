@@ -19,7 +19,7 @@ export function* getTodosAsync() {
 		yield put({
 			type: PUSH_NOTIFICATION,
 			notificationType: 'error',
-			message: "Can't get Todo list"
+			message: "Can't get remote Todo list"
 		})
 	}
 }
