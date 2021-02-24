@@ -39,7 +39,7 @@ const TodoHeader = () => {
 	return (
 		<Stack tokens={todoHeaderStackTokens}>
 			<Stack horizontal horizontalAlign="center">
-				<Text variant="xxLarge">Todo App</Text>
+				<Text variant="xxLarge">Todo App 1</Text>
 			</Stack>
 
 			<Stack horizontal tokens={todoLabelStackTokens}>
